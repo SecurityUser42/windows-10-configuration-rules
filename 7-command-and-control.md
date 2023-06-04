@@ -1,0 +1,8 @@
+# Command and Control
+
+| **Configuration Rule**                                                                                            | **Value** | **+**                                                                              | **-**                                    |
+|------------------------------------------------------------------------------------------------------------------------|----------------|-----------------------------------------------------------------------------------------|-----------------------------------------------|
+| ASR Rule: Block executable files from running unless they meet a prevalence, age, or trusted list criterion | 1              | Programs cannot be executed unless they meet strict requirements                        | Unknown or custom made executables cannot run |
+| Prevent access to the command prompt                                                                                   | Enabled        | Command prompt cannot be used on a command-and-control server                           | Command prompt is disabled entirely           |
+| Remove (RX) permissions for CMD from standard users                                                              | -              | Attackers cannot access the command prompt without administrative privileges            | Standard users cannot use the command prompt  |
+| Block connections from CMD with a Windows Firewall Outbound Rule                                                 | -              | Attackers cannot use the command prompt to download/upload files from/to remote servers | -                                             |
